@@ -32,8 +32,7 @@ public class Teste02 {
 	@Before
 	public void setUp() {
 		driver = new ChromeDriver();
-		js = (JavascriptExecutor) driver;
-		vars = new HashMap<String, Object>();
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver/chromedriver.exe");
 	}
 
 	@After
